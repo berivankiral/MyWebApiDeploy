@@ -40,3 +40,9 @@ jobs:
           --resource-group ${{ env.RESOURCE_GROUP }} \
           --docker-custom-image-name ${{ env.ACR_NAME }}.azurecr.io/${{ env.IMAGE_NAME }}:${{ github.sha }} \
           --docker-registry-server-url https://${{ env.ACR_NAME }}.azurecr.io
+    - name: Set PORT environment variable on Azure Web App
+      run: |
+        az webapp config appsettings set \
+          --name ${{ secrets.AZURE_WEBAPP_NAME }} \
+          --resource-group ${{ env.RESOURCE_GROUP }} \
+          --settings PORT=80
