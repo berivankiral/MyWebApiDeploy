@@ -1,0 +1,45 @@
+## Visual Studio ve .NET
+.vs/
+*.user
+*.suo
+*.sln.docstates
+
+# Derleme
+[Dd]ebug/
+[Rr]elease/
+[Bb]in/
+[Oo]bj/
+
+# Hata ayıklama sembollerini içeren .pdb dosyaları
+*.pdb
+
+# NuGet paketlerini ve cache dosyaları
+packages/
+*.nupkg
+.nuget/
+
+# Docker ile ilgili geçici veya cache dosyaları
+**/.dockerignore
+.docker/
+
+# Docker Compose geçici dosyaları
+docker-compose.yml.save
+
+# Azure App Service Deployment ile ilgili geçici dosyalar.
+.publish/
+
+## Diğer
+*.log
+*.tmp
+*.bak
+*.cache
+*.sbr
+*.bsc
+*.ncb
+*.pidb
+*.opensdf
+*.sdf
+*.vsp
+*.vssscc
+*.vspscc
+*.resharper
