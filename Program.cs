@@ -1,5 +1,5 @@
 var builder = WebApplication.CreateBuilder(args);
-var port = Environment.GetEnvironmentVariable("PORT") ?? "8181";
+var port = Environment.GetEnvironmentVariable("PORT") ?? "80";
 builder.WebHost.UseUrls($"http://0.0.0.0:{port}");
 
 // builder.WebHost.UseUrls("http://0.0.0.0:5170");

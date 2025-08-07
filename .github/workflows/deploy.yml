@@ -45,4 +45,4 @@ jobs:
         az webapp config appsettings set \
           --name ${{ secrets.AZURE_WEBAPP_NAME }} \
           --resource-group ${{ env.RESOURCE_GROUP }} \
-          --settings PORT=8181
+          --settings PORT=80
